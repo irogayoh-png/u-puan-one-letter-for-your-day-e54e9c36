@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/u-puan-one-letter-for-your-day-e54e9c36/irogayoh-png/u-puan-one-letter-for-your-day-e54e9c36/rank.svg)](https://make.fun/bounty/u-puan-one-letter-for-your-day-e54e9c36/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-puan-one-letter-for-your-day-e54e9c36)
 [![reward](https://make.fun/badge/u-puan-one-letter-for-your-day-e54e9c36/irogayoh-png/u-puan-one-letter-for-your-day-e54e9c36/reward.svg)](https://make.fun/bounty/u-puan-one-letter-for-your-day-e54e9c36?utm_source=github&utm_medium=readme&utm_campaign=u-puan-one-letter-for-your-day-e54e9c36)
 
-One letter for your day: **G for groggy** — the foggy-headed, too-little-sleep feeling of a real day. The program writes exactly that one letter to `entry.txt`, nothing else. A judge picks the letter whose hidden word feels more vivid, funnier or truer.
+One letter for your day: **D for doomscrolling** — scrolling bad news until late, phone glowing at 3 a.m., a feed that never ends. The program writes exactly that one letter to `entry.txt`, nothing else. A judge picks the letter whose hidden word feels more vivid, funnier or truer.
 
 ## Run it
 

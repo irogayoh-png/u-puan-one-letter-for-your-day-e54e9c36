@@ -4,7 +4,9 @@
 [![rank](https://make.fun/badge/u-puan-one-letter-for-your-day-e54e9c36/irogayoh-png/u-puan-one-letter-for-your-day-e54e9c36/rank.svg)](https://make.fun/bounty/u-puan-one-letter-for-your-day-e54e9c36/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-puan-one-letter-for-your-day-e54e9c36)
 [![reward](https://make.fun/badge/u-puan-one-letter-for-your-day-e54e9c36/irogayoh-png/u-puan-one-letter-for-your-day-e54e9c36/reward.svg)](https://make.fun/bounty/u-puan-one-letter-for-your-day-e54e9c36?utm_source=github&utm_medium=readme&utm_campaign=u-puan-one-letter-for-your-day-e54e9c36)
 
-One letter for your day: **D for doomscrolling** — scrolling bad news until late, phone glowing at 3 a.m., a feed that never ends. The program writes exactly that one letter to `entry.txt`, nothing else. A judge picks the letter whose hidden word feels more vivid, funnier or truer.
+One letter for your day: **O for overcaffeinated** — shaky hands, wide eyes, the fifth espresso, a day run on a racing heart. The program writes exactly that one letter to `entry.txt`, nothing else. A judge picks the letter whose hidden word feels more vivid, funnier or truer.
+
+This is the v2 candidate, built to challenge the live GAHAR entry "D (doomscrolling)". It is only submitted if it is proven better than D on the judge's five criteria.
 
 ## Run it
 

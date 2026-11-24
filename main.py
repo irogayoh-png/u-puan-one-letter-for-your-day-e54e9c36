@@ -1,36 +1,33 @@
-# One Letter for Your Day — versi GAHAR.
+# One Letter for Your Day — kandidat v2.
 #
-# Menulis tepat satu huruf, "D", ke entry.txt.
-# D singkatan dari "doomscrolling": menggulir kabar buruk sampai larut —
-# gambaran hari yang sangat spesifik, langsung terbayang, lucu, dan benar.
-# Dari semua kata yang menggambarkan hari, doomscrolling yang paling
-# tajam: satu huruf D sudah membawa seluruh adegan (ponsel menyala,
-# jam 3 pagi, umpan yang tak ada habisnya). Bukan suasana hati yang samar.
+# Menulis tepat satu huruf, "O", ke entry.txt.
+# O singkatan dari "overcaffeinated": tangan gemetar, mata terbelalak,
+# espresso kelima — hari yang dijalani dengan jantung berdegup kencang.
+# Kata yang spesifik, langsung terbayang, lucu, dan benar: bukan suasana
+# hati yang samar, melainkan adegan yang bisa diceritakan ke teman.
+# Penantang untuk GAHAR live "D (doomscrolling)": dinilai dengan 5
+# kriteria juri yang sama sebelum diputuskan layak submit atau tidak.
 
-from pathlib import Path
 import os
+import sys
 
 
-# Kata di balik huruf ini. Huruf entri = huruf pertama kata tersebut.
-WORD_BEHIND_THE_LETTER = "doomscrolling"
-
-
-def entry_letter(word):
-    first = word[0].upper()
-    if not ("A" <= first <= "Z"):
-        raise SystemExit("kata harus diawali huruf A-Z")
-    return first
+WORD = "overcaffeinated"
+LETTER = WORD[0].upper()
 
 
 def main():
-    out_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
-    out_dir.mkdir(parents=True, exist_ok=True)
-    letter = entry_letter(WORD_BEHIND_THE_LETTER)
-    target = out_dir / "entry.txt"
-    target.write_bytes(letter.encode("ascii"))
+    if len(LETTER) != 1 or not LETTER.isalpha() or not LETTER.isupper():
+        sys.exit("huruf entri harus satu huruf A-Z")
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
+    os.makedirs(out_dir, exist_ok=True)
+    target = os.path.join(out_dir, "entry.txt")
+    with open(target, "wb") as f:
+        f.write(LETTER.encode("ascii"))
     # Periksa sendiri: gate menolak apa pun selain tepat 1 karakter.
-    if target.read_bytes() != letter.encode("ascii"):
-        raise SystemExit("entry.txt harus tepat satu huruf A-Z")
+    with open(target, "rb") as f:
+        if f.read() != LETTER.encode("ascii"):
+            sys.exit("entry.txt harus tepat satu huruf A-Z")
 
 
 main()
